@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "gaodei-maps": {
+      "type": "sse",
+      "url": "https://mcp.amap.com/sse?key=15d023e005175268de55f7079e8c8eb4"
+    },
+    "baidu-maps": {
+      "type": "sse",
+      "url": "https://mcp.map.baidu.com/sse?ak=IvWyBGGJIWwvurzSQJlGKgbkV3XgQJJF"
+    },
+    "tx-maps": {
+      "type": "sse",
+      "url": "https://mcp.map.qq.com/sse?key=kTKGYARH5TP8VJCMKaj9AfymJZGEzO2Y&format=0"
+    }
+  }
+}
+
