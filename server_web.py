@@ -51,7 +51,7 @@ class PromptResponse(BaseModel):
 #     <head>
 #         <meta charset="UTF-8">
 #         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-#         <title>DiDi POI DeepResearch</title>
+#         <title>Open POI DeepResearch</title>
 #         <!-- 引入 Markdown 解析库 -->
 #         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 #         <!-- 引入代码高亮库 -->
@@ -308,11 +308,11 @@ class PromptResponse(BaseModel):
 #     <body>
 #         <div class="chat-container">
 #             <div class="chat-header">
-#                 <h2>DiDi POI DeepResearch</h2>
+#                 <h2>Open POI DeepResearch</h2>
 #             </div>
 #             <div class="chat-messages" id="chat-messages">
 #                 <div class="message agent-message">
-#                     <p>你好！我是 DiDi POI DeepResearch 助手。有什么我可以帮助你的吗？</p>
+#                     <p>你好！我是 Open POI DeepResearch 助手。有什么我可以帮助你的吗？</p>
 #                 </div>
 #             </div>
 #             <div class="typing-indicator" id="typing-indicator">
@@ -486,7 +486,7 @@ async def get_chat_interface():
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DiDi POI DeepResearch(powered by gaode)</title>
+        <title>Open POI DeepResearch(powered by gaode)</title>
         <!-- 依赖项 highlight.js 应该在最前面 -->
         <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/lib/highlight.min.js"></script>
 
@@ -746,11 +746,11 @@ async def get_chat_interface():
     <body>
         <div class="chat-container">
             <div class="chat-header">
-                <h2>DiDi POI DeepResearch(powered by gaode-mcp)</h2>
+                <h2>Open POI DeepResearch(powered by gaode-mcp)</h2>
             </div>
             <div class="chat-messages" id="chat-messages">
                 <div class="message agent-message">
-                    <p>你好！我是 DiDi POI DeepResearch 助手。有什么我可以帮助你的吗？</p>
+                    <p>你好！我是 Open POI DeepResearch 助手。有什么我可以帮助你的吗？</p>
                 </div>
             </div>
             <div class="typing-indicator" id="typing-indicator">
