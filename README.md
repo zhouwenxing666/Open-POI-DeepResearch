@@ -2,7 +2,7 @@
   <img src="assets/logo.jpg" width="200"/>
 </p>
 
-English | [中文](README_ZH.md) | [한국어](README_ko.md) | [日本語](README_ja.md)
+English | [中文](README_zh.md) | [한국어](README_ko.md) | [日本語](README_ja.md)
 
 # Open-POI-Deepresearch Project Introduction
 
