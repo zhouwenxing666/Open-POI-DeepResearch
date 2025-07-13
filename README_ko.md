@@ -4,12 +4,11 @@
 
 [English](README.md) | [中文](README_zh.md) | 한국어 | [日本語](README_ja.md)
 
-[![GitHub stars](https://img.shields.io/github/stars/FoundationAgents/OpenManus?style=social)](https://github.com/FoundationAgents/OpenManus/stargazers)
-&ensp;
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) &ensp;
-[![Discord Follow](https://dcbadge.vercel.app/api/server/DYn29wFk9z?style=flat)](https://discord.gg/DYn29wFk9z)
-[![Demo](https://img.shields.io/badge/Demo-Hugging%20Face-yellow)](https://huggingface.co/spaces/lyh-917/OpenManusDemo)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15186407.svg)](https://doi.org/10.5281/zenodo.15186407)
+# Open-POI-Deepresearch 프로젝트 개요
+
+Open-POI-Deepresearch 프로젝트는 전면적인 여행 계획 보조 도구로, 개인에게 다양한 여행 서비스를 제공합니다. 예를 들어 주변의 xx를 찾거나, 여행 계획을 지정하는 등의 기능을 지원하며, 한 번의 클릭으로 고드(高德) 내비게이션/택시 링크를 생성할 수 있습니다. 이 프로젝트는 고드 mcp에서 제공하는 여행 도구 서비스를 기반으로 하고 있으며, 심층 검색과 자체 검증 기능을 지원합니다. 불확실한 정보에 대해서는 askhuman 도구를 통해 사용자에게 추가 질문을 하게 됩니다. 또한 최종 버전에서는 스트리밍 기능을 지원할 예정이며(현재 개발 중), 이 프로젝트가 사용자 각자가 소유한 여행 계획 보조 도구를 구축하는 데 도움이 되기를 바랍니다.
+
+Open-POI-Deepresearch 프로젝트는 OpenManus 프로젝트를 기반으로 개발되었으며, 실행 환경은 OpenManus와 동일합니다. 사용자는 아래의 OpenManus 프로젝트 소개에서 해당 환경을 설치한 후, Open-POI-Deepresearch에서 제공하는 server_web.py를 사용하여 서비스를 시작하면 됩니다(명령어: python server_web.py).
 
 # 👋 OpenManus
 
@@ -84,6 +83,7 @@ uv pip install -r requirements.txt
 ```
 
 ### 브라우저 자동화 도구 (선택사항)
+
 ```bash
 playwright install
 ```
@@ -127,6 +127,7 @@ python main.py
 이후 터미널에서 아이디어를 작성하세요!
 
 MCP 도구 버전을 사용하려면 다음을 실행하세요:
+
 ```bash
 python run_mcp.py
 ```
@@ -158,6 +159,7 @@ use_data_analysis_agent = true     # 기본적으로 비활성화되어 있으�
 **참고**: pull request를 제출하기 전에 pre-commit 도구를 사용하여 변경 사항을 확인하십시오. `pre-commit run --all-files`를 실행하여 검사를 실행합니다.
 
 ## 커뮤니티 그룹
+
 Feishu 네트워킹 그룹에 참여하여 다른 개발자들과 경험을 공유하세요!
 
 <div align="center" style="display: flex; gap: 20px;">
@@ -180,6 +182,7 @@ Feishu 네트워킹 그룹에 참여하여 다른 개발자들과 경험을 공�
 OpenManus는 MetaGPT 기여자들에 의해 개발되었습니다. 이 에이전트 커뮤니티에 깊은 감사를 전합니다!
 
 ## 인용
+
 ```bibtex
 @misc{openmanus2025,
   author = {Xinbin Liang and Jinyu Xiang and Zhaoyang Yu and Jiayi Zhang and Sirui Hong and Sheng Fan and Xiao Tang},

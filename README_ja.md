@@ -4,12 +4,11 @@
 
 [English](README.md) | [中文](README_zh.md) | [한국어](README_ko.md) | 日本語
 
-[![GitHub stars](https://img.shields.io/github/stars/FoundationAgents/OpenManus?style=social)](https://github.com/FoundationAgents/OpenManus/stargazers)
-&ensp;
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) &ensp;
-[![Discord Follow](https://dcbadge.vercel.app/api/server/DYn29wFk9z?style=flat)](https://discord.gg/DYn29wFk9z)
-[![Demo](https://img.shields.io/badge/Demo-Hugging%20Face-yellow)](https://huggingface.co/spaces/lyh-917/OpenManusDemo)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15186407.svg)](https://doi.org/10.5281/zenodo.15186407)
+# Open-POI-Deepresearchプロジェクトの概要
+
+Open-POI-Deepresearchプロジェクトは、全方位的な旅行計画支援ツールです。個人向けの各種旅行サービスを提供しており、例えば周辺の○○を検索したり、旅行計画を作成したりすることができ、一括で高德ナビゲーション/タクシーのリンクを生成することも可能です。本プロジェクトは高德mcpが提供する旅行ツールサービスを利用しており、深度検索と自己検証をサポートしています。不確定な情報については、askhumanツールを通じて確認を求めることができます。また、最終バージョンではストリーミングに対応する予定です（現在開発中）。このプロジェクトが、皆様各自の旅行計画支援ツールを構築する際に役立つことを期待しています。
+
+Open-POI-DeepresearchプロジェクトはOpenManusプロジェクトを基に開発されており、実行環境はOpenManusと同じです。ユーザーは以下のOpenManusプロジェクトの紹介に従って対応する環境をインストールした後、Open-POI-Deepresearchが提供するserver_web.pyを使用してサービスを起動するだけです（コマンド：python server_web.py）。
 
 # 👋 OpenManus
 
@@ -84,6 +83,7 @@ uv pip install -r requirements.txt
 ```
 
 ### ブラウザ自動化ツール（オプション）
+
 ```bash
 playwright install
 ```
@@ -92,7 +92,7 @@ playwright install
 
 OpenManusを使用するには、LLM APIの設定が必要です。以下の手順に従って設定してください：
 
-1. `config`ディレクトリに`config.toml`ファイルを作成します（サンプルからコピーできます）：
+1. `config`ディレクトリに `config.toml`ファイルを作成します（サンプルからコピーできます）：
 
 ```bash
 cp config/config.example.toml config/config.toml
@@ -127,6 +127,7 @@ python main.py
 その後、ターミナルからプロンプトを入力してください！
 
 MCP ツールバージョンを使用する場合は、以下を実行します：
+
 ```bash
 python run_mcp.py
 ```
@@ -139,7 +140,7 @@ python run_flow.py
 
 ## カスタムマルチエージェントの追加
 
-現在、一般的なOpenManusエージェントに加えて、データ分析とデータ可視化タスクに適したDataAnalysisエージェントが組み込まれています。このエージェントを`config.toml`の`run_flow`に追加することができます。
+現在、一般的なOpenManusエージェントに加えて、データ分析とデータ可視化タスクに適したDataAnalysisエージェントが組み込まれています。このエージェントを `config.toml`の `run_flow`に追加することができます。
 
 ```toml
 # run-flowのオプション設定
@@ -148,7 +149,6 @@ use_data_analysis_agent = true     # デフォルトでは無効、trueに変更
 ```
 
 これに加えて、エージェントが正常に動作するために必要な依存関係をインストールする必要があります：[具体的なインストールガイド](app/tool/chart_visualization/README_ja.md##インストール)
-
 
 ## 貢献方法
 
@@ -159,6 +159,7 @@ use_data_analysis_agent = true     # デフォルトでは無効、trueに変更
 **注意**: プルリクエストを送信する前に、pre-commitツールを使用して変更を確認してください。`pre-commit run --all-files`を実行してチェックを実行します。
 
 ## コミュニティグループ
+
 Feishuのネットワーキンググループに参加して、他の開発者と経験を共有しましょう！
 
 <div align="center" style="display: flex; gap: 20px;">
@@ -181,6 +182,7 @@ Feishuのネットワーキンググループに参加して、他の開発者�
 OpenManusはMetaGPTのコントリビューターによって構築されました。このエージェントコミュニティに大きな感謝を！
 
 ## 引用
+
 ```bibtex
 @misc{openmanus2025,
   author = {Xinbin Liang and Jinyu Xiang and Zhaoyang Yu and Jiayi Zhang and Sirui Hong and Sheng Fan and Xiao Tang},

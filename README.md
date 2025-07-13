@@ -4,12 +4,11 @@
 
 English | [中文](README_zh.md) | [한국어](README_ko.md) | [日本語](README_ja.md)
 
-[![GitHub stars](https://img.shields.io/github/stars/FoundationAgents/OpenManus?style=social)](https://github.com/FoundationAgents/OpenManus/stargazers)
-&ensp;
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) &ensp;
-[![Discord Follow](https://dcbadge.vercel.app/api/server/DYn29wFk9z?style=flat)](https://discord.gg/DYn29wFk9z)
-[![Demo](https://img.shields.io/badge/Demo-Hugging%20Face-yellow)](https://huggingface.co/spaces/lyh-917/OpenManusDemo)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15186407.svg)](https://doi.org/10.5281/zenodo.15186407)
+# Open-POI-Deepresearch Project Introduction
+
+The Open-POI-Deepresearch project is an all-in-one travel planning assistant designed to provide personalized travel services, such as locating nearby xx, creating custom travel plans, and generating Gaode Navigation/Taxi links with a single click. It leverages Gaode MCP to offer travel-related tools and supports advanced search and self-validation capabilities. When encountering uncertain information, the system will clarify using the askhuman tool. Additionally, the final version will support streaming features (under development). We hope this project helps you build your own travel planning assistant.
+
+The Open-POI-Deepresearch project is built upon the OpenManus project and requires the same runtime environment. Please install the necessary environment following the instructions from the OpenManus project description. Once completed, start the Open-POI-Deepresearch service using the provided server_web.py script via the command: `python server_web.py`.
 
 # 👋 OpenManus
 
@@ -84,6 +83,7 @@ uv pip install -r requirements.txt
 ```
 
 ### Browser Automation Tool (Optional)
+
 ```bash
 playwright install
 ```
@@ -127,6 +127,7 @@ python main.py
 Then input your idea via terminal!
 
 For MCP tool version, you can run:
+
 ```bash
 python run_mcp.py
 ```
@@ -146,6 +147,7 @@ Currently, besides the general OpenManus Agent, we have also integrated the Data
 [runflow]
 use_data_analysis_agent = true     # Disabled by default, change to true to activate
 ```
+
 In addition, you need to install the relevant dependencies to ensure the agent runs properly: [Detailed Installation Guide](app/tool/chart_visualization/README.md##Installation)
 
 ## How to contribute
@@ -157,6 +159,7 @@ Or contact @mannaandpoem via 📧email: mannaandpoem@gmail.com
 **Note**: Before submitting a pull request, please use the pre-commit tool to check your changes. Run `pre-commit run --all-files` to execute the checks.
 
 ## Community Group
+
 Join our networking group on Feishu and share your experience with other developers!
 
 <div align="center" style="display: flex; gap: 20px;">
@@ -168,9 +171,10 @@ Join our networking group on Feishu and share your experience with other develop
 [![Star History Chart](https://api.star-history.com/svg?repos=FoundationAgents/OpenManus&type=Date)](https://star-history.com/#FoundationAgents/OpenManus&Date)
 
 ## Sponsors
-Thanks to [PPIO](https://ppinfra.com/user/register?invited_by=OCPKCN&utm_source=github_openmanus&utm_medium=github_readme&utm_campaign=link) for computing source support.
-> PPIO: The most affordable and easily-integrated MaaS and GPU cloud solution.
 
+Thanks to [PPIO](https://ppinfra.com/user/register?invited_by=OCPKCN&utm_source=github_openmanus&utm_medium=github_readme&utm_campaign=link) for computing source support.
+
+> PPIO: The most affordable and easily-integrated MaaS and GPU cloud solution.
 
 ## Acknowledgement
 
@@ -184,6 +188,7 @@ We also thank stepfun(阶跃星辰) for supporting our Hugging Face demo space.
 OpenManus is built by contributors from MetaGPT. Huge thanks to this agent community!
 
 ## Cite
+
 ```bibtex
 @misc{openmanus2025,
   author = {Xinbin Liang and Jinyu Xiang and Zhaoyang Yu and Jiayi Zhang and Sirui Hong and Sheng Fan and Xiao Tang},
