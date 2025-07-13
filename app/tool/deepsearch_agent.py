@@ -39,9 +39,8 @@ class DeepSearchAgent(BaseTool):
         },
         "required": ["query", "user_original_query"],
     }
-
-    #_SEARCH_API_URL = "http://10.191.60.13:8050/api/chat"
-    _SEARCH_API_URL = "http://10.191.60.13:8055/api/chat"  #qwen3-14b
+    # todo 这个版本不用 用deepsearch_agent_fixed.py
+    _SEARCH_API_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1"
     _LOG_DIR = "logs"
 
 
@@ -271,7 +270,7 @@ if __name__ == "__main__":
     query = "What are the latest advancements in AI?"
 
     # 执行深度搜索
-    result = asyncio.run(tool.execute(query))
+    result = asyncio.run(tool.execute(query, query))
     # print(result)
     # 打印结果
     # print(json.dumps(result, indent=2, ensure_ascii=False))

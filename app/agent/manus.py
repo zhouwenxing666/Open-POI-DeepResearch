@@ -8,7 +8,7 @@ from app.config import config
 from app.logger import logger
 from app.prompt.manus import NEXT_STEP_PROMPT, SYSTEM_PROMPT
 from app.tool import Terminate, ToolCollection
-from app.tool.deepsearch_agent import DeepSearchAgent
+from app.tool.deepsearch_agent_fixed import DeepSearchAgent
 
 # 确保从正确的路径导入单例和初始化函数
 from app.tool.mcp import mcp_clients_instance, initialize_mcp_clients
