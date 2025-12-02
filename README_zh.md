@@ -8,7 +8,12 @@
 
 Open-POI-Deepresearch项目是一个全方位的出行规划助手，为您个人提供各项出行服务，比如查找附近的xx，指定旅行计划等，可一键生成高德导航/打车链接。其由高德mcp提供出行工具服务，并且支持深度搜索和自我验证，对于不确定的消息会通过askhuman工具进行反问。并且最终版支持流式（正在开发中）。希望该项目能帮助你搭建属于自己的出行规划助手。
 
-Open-POI-Deepresearch**项目基于** OpenManus **项目开发而来，运行环境与**OpenManus**一致，用户可在下面**OpenManus**项目介绍中安装对应环境，然后用**Open-POI-Deepresearch**提供的**server_web.py**来启动**Open-POI-Deepresearch**服务即可** **（**python server_web.py**）**
+Open-POI-Deepresearch**项目基于** OpenManus 框架**开发而来，运行环境与**OpenManus**一致，用户可在下面**OpenManus**项目介绍中安装对应环境，然后用**Open-POI-Deepresearch**提供的**server_web.py**来启动**Open-POI-Deepresearch**服务即可** **（**python server_web.py**）**
+
+
+以下是OpenManus介绍以及本项目环境搭建过程。
+
+---
 
 # 👋 OpenManus
 
