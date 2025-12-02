@@ -19,7 +19,7 @@ class DeepSearchAgent(BaseTool):
     """
     改进的深度搜索代理，使用多种搜索策略提供深度分析
     """
-    name: str = "deep_search_fixed"
+    name: str = "deep_search"
     description: str = """Perform enhanced deep search and analysis using multiple search strategies.
     This tool combines web search, knowledge synthesis, and structured analysis to provide comprehensive answers."""
     parameters: dict = {

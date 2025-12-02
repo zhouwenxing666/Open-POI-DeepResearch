@@ -74,12 +74,12 @@ class Manus(ToolCallAgent):
         # 从 new_tools 中移除不需要的工具
         filtered_mcp_tools = [
             tool for tool in latest_mcp_tools
-            if tool.name not in [
-                "maps_schema_navi",
-                "maps_schema_take_taxi",
-                "maps_schema_personal_map",
-                "maps_weather"
-            ]
+            # if tool.name not in [
+            #     "maps_schema_navi",
+            #     "maps_schema_take_taxi",
+            #     "maps_schema_personal_map",
+            #     "maps_weather"
+            # ]
         ]
 
         # 3. 将最新的MCP工具添加到Agent的可用工具中
