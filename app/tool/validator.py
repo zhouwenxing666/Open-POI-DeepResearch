@@ -1,13 +1,13 @@
-from app.tool.current_location import get_current_location
+# from app.tool.current_location import get_current_location
 import asyncio
 
 SYSTEM_PROMPT = (
     "你是一个回复的评判员, 用于评估【待判别的回复】是否符合评估原则。"
 )
 
-current = asyncio.run(get_current_location())
-if current:
-    SYSTEM_PROMPT += '\n' + current
+# current = asyncio.run(get_current_location())
+# if current:
+#     SYSTEM_PROMPT += '\n' + current
 
 from datetime import datetime
 # 获取当前时间

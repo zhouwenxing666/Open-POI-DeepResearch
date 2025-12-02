@@ -1,4 +1,4 @@
-from app.tool.current_location import get_current_location
+# from app.tool.current_location import get_current_location
 import asyncio
 
 SYSTEM_PROMPT = (
@@ -24,9 +24,9 @@ SYSTEM_PROMPT = (
 
 
 
-current = asyncio.run(get_current_location())
-if current:
-    SYSTEM_PROMPT += '\n' + current
+# current = asyncio.run(get_current_location())
+# if current:
+#     SYSTEM_PROMPT += '\n' + current
 
 
 from datetime import datetime

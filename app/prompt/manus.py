@@ -1,7 +1,7 @@
 import asyncio
 from datetime import datetime
 
-from app.tool.current_location import get_current_location
+# from app.tool.current_location import get_current_location
 
 # SYSTEM_PROMPT 变量
 SYSTEM_PROMPT = (
@@ -10,13 +10,13 @@ SYSTEM_PROMPT = (
 )
 
 # 动态获取并追加当前位置信息
-try:
-    current_location_info = asyncio.run(get_current_location())
-    if current_location_info:
-        SYSTEM_PROMPT += "\n" + current_location_info
-except Exception:
-    # 在非异步上下文中运行时，可以忽略此错误或记录日志
-    pass
+# try:
+#     current_location_info = asyncio.run(get_current_location())
+#     if current_location_info:
+#         SYSTEM_PROMPT += "\n" + current_location_info
+# except Exception:
+#     # 在非异步上下文中运行时，可以忽略此错误或记录日志
+#     pass
 
 # NEXT_STEP_PROMPT 变量
 NEXT_STEP_PROMPT = """
